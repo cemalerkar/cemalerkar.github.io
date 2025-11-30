@@ -1,11 +1,146 @@
 <!DOCTYPE html>
-<html>
+<html lang="tr">
 <head>
-    <title>Cemal Erkar - Developer</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ceronia Software Solutions</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
-    <h1>Merhaba! 👋</h1>
-    <p>Bu sayfa Google Play doğrulama işlemleri için oluşturulmuştur.</p>
-    <p><a href="/app-ads.txt">app-ads.txt dosyasını görüntüle</a></p>
+
+    <nav class="navbar">
+        <div class="container nav-container">
+            <div class="logo">
+                <img src="ceronia_solutions_new.png" alt="Ceronia Logo">    
+            </div>
+            <ul class="nav-links">
+                <li><a href="#hero">Ana Sayfa</a></li>
+                <li><a href="#about">Hakkımızda</a></li>
+                <li><a href="#services">Hizmetler</a></li>
+                <li><a href="#portfolio">Projeler</a></li>
+                <li><a href="#contact" class="btn-nav">İletişim</a></li>
+            </ul>
+            <div class="hamburger">
+                <i class="fas fa-bars"></i>
+            </div>
+        </div>
+    </nav>
+
+    <section id="hero" class="hero">
+        <div class="container hero-content">
+            <h1>Dijital Dünyayı <br> <span class="gradient-text">Yeniden Kodluyoruz</span></h1>
+            <p>Ceronia Software Solutions, estetik ve teknolojiyi birleştiren modern yazılım çözümleri sunar.</p>
+            <div class="hero-btns">
+                <a href="#contact" class="btn btn-primary">Projeye Başla</a>
+                <a href="#services" class="btn btn-secondary">Hizmetlerimiz</a>
+            </div>
+        </div>
+        <div class="hero-bg-effect"></div>
+    </section>
+
+    <section id="about" class="section">
+        <div class="container">
+            <h2 class="section-title">Biz Kimiz?</h2>
+            <div class="about-grid">
+                <div class="about-text">
+                    <p>Ceronia Software, kullanıcı deneyimini merkeze alan, yenilikçi ve sürdürülebilir yazılım çözümleri geliştiren bir teknoloji evidir.</p>
+                    <p>Mobil uygulamalardan web platformlarına kadar geniş bir yelpazede hizmet veriyor, karmaşık problemleri zarif kodlarla çözüyoruz.</p>
+                </div>
+                <div class="about-stats">
+                    <div class="stat-box">
+                        <h3>%100</h3>
+                        <p>Müşteri Memnuniyeti</p>
+                    </div>
+                    <div class="stat-box">
+                        <h3>7/24</h3>
+                        <p>Teknik Destek</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="services" class="section bg-darker">
+        <div class="container">
+            <h2 class="section-title">Çözümlerimiz</h2>
+            <div class="services-grid">
+                <div class="service-card">
+                    <i class="fas fa-mobile-alt icon"></i>
+                    <h3>Mobil Uygulama</h3>
+                    <p>Android ve iOS için yüksek performanslı, kullanıcı dostu native ve hybrid uygulamalar.</p>
+                </div>
+                <div class="service-card">
+                    <i class="fas fa-code icon"></i>
+                    <h3>Web Geliştirme</h3>
+                    <p>Modern arayüzler, hızlı yüklenen sayfalar ve güçlü altyapıya sahip web siteleri.</p>
+                </div>
+                <div class="service-card">
+                    <i class="fas fa-magic icon"></i>
+                    <h3>UI/UX Tasarım</h3>
+                    <p>Markanızın kimliğini yansıtan, estetik ve işlevsel arayüz tasarımları.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="portfolio" class="section">
+        <div class="container">
+            <h2 class="section-title">Son Çalışmalar</h2>
+            <div class="portfolio-grid">
+                <div class="portfolio-item item-1">
+                    <div class="portfolio-overlay">
+                        <h3>Üniversite Not ve Ortalama Hesaplama</h3>
+                        <p>Öğrenciler için geliştirilmiş pratik ortalama hesaplama aracı.</p>
+                        <a href="https://play.google.com/store/apps/details?id=com.cemalerkar.ktuapp">İncele <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+                <div class="portfolio-item item-2">
+                    <div class="portfolio-overlay">
+                        <h3>To be continued...</h3>
+                        <p>Bir sonraki çalışmamızda bize yardımcı olmak ister misiniz?</p>
+                        <a href="#contact">İncele <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="section bg-darker">
+        <div class="container contact-container">
+            <div class="contact-info">
+                <h2>İletişime Geçin</h2>
+                <p>Bir fikriniz mi var? Hayata geçirmek için buradayız.</p>
+                <div class="contact-detail">
+                    <i class="fas fa-envelope"></i>
+                    <span>cemalerkar@mail.com.tr</span>
+                </div>
+                <div class="contact-detail">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <span>İstanbul, Türkiye</span>
+                </div>
+            </div>
+            <form class="contact-form">
+                <input type="text" placeholder="Adınız Soyadınız" required>
+                <input type="email" placeholder="E-posta Adresiniz" required>
+                <textarea rows="5" placeholder="Mesajınız..." required></textarea>
+                <button type="submit" class="btn btn-primary">Gönder</button>
+            </form>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container footer-content">
+            <p>&copy; 2025 Ceronia Software Solutions. Tüm hakları saklıdır.</p>
+            <div class="social-links">
+                <a href="https://www.linkedin.com/in/cemal-erkar-830b79174/"><i class="fab fa-linkedin"></i></a>
+                <a href="https://www.instagram.com/cemalerkarr"><i class="fab fa-instagram"></i></a>
+                <a href="https://github.com/cemalerkar/"><i class="fab fa-github"></i></a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
 </body>
 </html>
